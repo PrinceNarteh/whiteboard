@@ -1,7 +1,9 @@
+import React from "react";
+
 function App() {
   return (
     <div className="App">
-      <h3>React Whiteboard</h3>
+      <h1>WhiteBoard</h1>
     </div>
   );
 }
