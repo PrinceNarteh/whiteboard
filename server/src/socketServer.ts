@@ -1,4 +1,4 @@
 import { Server } from "socket.io";
-import httpServer from "./httpServer";
+import httpServer from "./server";
 
 const io = new Server(httpServer);

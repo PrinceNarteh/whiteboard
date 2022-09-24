@@ -4,7 +4,7 @@ type InputProps = React.InputHTMLAttributes<HTMLInputElement>;
 
 const InputField = ({ type = "text", name, ...props }: InputProps) => {
   return (
-    <div>
+    <div className="w-full">
       <input
         type={type}
         name={name}
