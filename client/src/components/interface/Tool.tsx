@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 
+interface ToolProps extends React.HTMLAttributes<HTMLDivElement> {
+  additionalClass?: string;
+  label: string;
+}
+
 export const Tool = ({
   additionalClass,
   children,
   label,
   ...props
-}: {
-  additionalClass?: string;
-  label: string;
-  children: React.ReactNode;
-}) => {
+}: ToolProps) => {
   const [show, setShow] = useState(false);
 
   return (
